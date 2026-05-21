@@ -1,105 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mahrosh Resume Website</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Mahrosh</h1>
-      <p class="tagline">Future Innovator | Science Lover | Creative Problem Solver</p>
-      <a href="#contact" class="button">Contact Me</a>
-    </div>
-  </header>
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background: linear-gradient(135deg, #10131f, #1d2b53, #2f1b4f);
+  color: #f5f5f5;
+  line-height: 1.6;
+}
 
-  <main>
+.hero {
+  min-height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.18), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(255, 210, 120, 0.2), transparent 30%);
+  padding: 40px 20px;
+}
 
-    <section class="card about">
-      <h2>About Me</h2>
-      <p>
-        Hi, my name is Mahrosh. I enjoy consistently learning about new things specifically about space. I am a curious and hardworking student who enjoys science,
-        technology, creativity. I like solving problems, working on projects, and exploring ideas, researching about various topics that could change the world.
-        </p>
-    </section>
+.hero-text {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 40px;
+  border-radius: 25px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+}
 
-    <section class="card">
-      <h2>Experience</h2>
+h1 {
+  font-size: 4rem;
+  letter-spacing: 4px;
+  color: #ffd166;
+}
 
-      <div class="experience-box">
-        <h3>NASA-Inspired Science Project</h3>
-        <p class="role">Student Space Research Assistant</p>
-        <p>
-          Worked on space-themed learning projects, research activities, and creative science
-          presentations. Practiced teamwork, communication, and problem-solving while exploring
-          topics related to astronomy, technology, and space exploration.
-        </p>
-      </div>
+.tagline {
+  font-size: 1.2rem;
+  margin: 15px 0 25px;
+  color: #e6e6e6;
+}
 
-      <div class="experience-box">
-        <h3>School Projects</h3>
-        <p class="role">Research and Design Student</p>
-        <p>
-          Created projects involving science, writing, visuals, and digital design. Used planning,
-          organization, and creativity to complete assignments and present information clearly.
-        </p>
-      </div>
-    </section>
+.button {
+  text-decoration: none;
+  background-color: #ffd166;
+  color: #111827;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-    <section class="card">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>Research</span>
-        <span>Creativity</span>
-        <span>Teamwork</span>
-        <span>Problem Solving</span>
-        <span>Communication</span>
-        <span>Science Projects</span>
-      </div>
-    </section>
+.button:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+}
 
-    <section class="card">
-      <h2>Education</h2>
-      <p>
-        High School Student with interests in science, technology, design, and future career
-        pathways connected to innovation.
-      </p>
-    </section>
+main {
+  width: 85%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
 
-    <section class="card">
-      <h2>Projects</h2>
+.card {
+  background: rgba(255, 255, 255, 0.11);
+  margin-bottom: 25px;
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  border-left: 6px solid #ffd166;
+}
 
-      <div class="project">
-        <h3>Space Innovation Portfolio</h3>
-        <p>
-          A creative project focused on space exploration, futuristic technology, and how science
-          can help people understand the universe.
-        </p>
-      </div>
+.card:hover {
+  transform: translateY(-4px);
+  transition: 0.3s;
+}
 
-      <div class="project">
-        <h3>Personal Resume Website</h3>
-        <p>
-          Designed and built a resume website using HTML and CSS to display personal information,
-          skills, experience, and goals.
-        </p>
-      </div>
-    </section>
+h2 {
+  color: #ffd166;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
 
-    <section class="card" id="contact">
-      <h2>Contact</h2>
-      <p>Email: Available upon request</p>
-      <p>Location: British Columbia, Canada</p>
-    </section>
+h3 {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
 
-  </main>
+.role {
+  color: #9ee6ff;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
 
-  <footer>
-    <p>© 2026 Mahrosh | Resume Website</p>
-  </footer>
+.experience-box,
+.project {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 18px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
 
-</body>
-</html>
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills span {
+  background-color: #ffd166;
+  color: #111827;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #dddddd;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-text {
+    padding: 25px;
+  }
+
+  main {
+    width: 92%;
+  }
+}
